@@ -53,8 +53,9 @@ class OsGridRef {
         this.easting = Number(easting);
         this.northing = Number(northing);
 
-        if (isNaN(easting)  || this.easting<0  || this.easting>700e3) throw new RangeError(`invalid easting ‘${easting}’`);
-        if (isNaN(northing) || this.northing<0 || this.northing>1300e3) throw new RangeError(`invalid northing ‘${northing}’`);
+        //this is removed to support functionality that is greater than these bounds
+        //if (isNaN(easting)  || this.easting<0  || this.easting>700e3) throw new RangeError(`invalid easting ‘${easting}’`);
+        //if (isNaN(northing) || this.northing<0 || this.northing>1300e3) throw new RangeError(`invalid northing ‘${northing}’`);
     }
 
 
